@@ -88,15 +88,76 @@
             </li>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper slider">
           <h1 class="visually-hidden">Отзывы о нас</h2>
-            <div class="reviews__list">
-              <blockquote class="reviews__item">
-
+            <div class="reviews__list slider-list">
+              <blockquote class="reviews__item slider-item">
+                <img class="reviews__author-image" src="img/quotes.svg" width="79" height="63" alt="review">
+                <div class="reviews__author-name-info">
+                  <q class="reviews__text">Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</q>
+                  <p class="reviews__author-name">Николай Петров</p>
+                  <p class="reviews__author-off">25&nbsp;лет, водитель трамвая</p>
+                </div>
               </blockquote>
+              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+              <button class="reviews__next" type="button">Следующий отзыв</button>
             </div>
+              <p class="reviews__toggles slider__toggles">
+                <button class="slider__toggle slider__toggle--current" type="button">1</button>
+                <button class="slider__toggle" type="button">2</button>
+                <button class="slider__toggle" type="button">3</button>
+              </p>
         </div>
       </section>
+
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__title">Остались вопросы? Свяжитесь с&nbsp;нами!</b>
+          <p class="contacts__text">
+            Звоните:<br>
+            <a class="contacts__phone" href="tel:+7(812)555-66-66">
+              <span class="contacts__contact-mobile"></span> +7 (812) 555-66-66
+            </a>
+          </p>
+          <p class="contacts__text">
+            Приезжайте в гости:
+          </p>
+          <p class="contacts__contact-street">
+            ул. Большая Конюшенная, 19/8
+          </p>
+        </div>
+        <p class="contacts__text">
+          Пишите:
+        </p>
+        <p class="contacts__contact-mail">
+          mail@htmlacademy.ru
+        </p>
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&utm_medium=mapframe&utm_source=maps&z=16.87" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.87" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </section>
+        </div>
+        <div class="page-footer__social social">
+          <a class="page-header__logo">
+            <img src="img/logotype blue desktop.svg" width="147" height="40" alt="PINK">
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__text">Разработано</a>
+          <img class="copyright__link" src="img/html_academy.svg" width="27" height="34" href="https://htmlacademy.ru/intensive/adaptive" alt="HTML Academy">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
