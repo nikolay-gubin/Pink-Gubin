@@ -19,12 +19,12 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a href="catalog.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a href="form.html">
                 Конкурс
               </a>
             </li>
@@ -44,23 +44,126 @@
           <p class="review__description">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</p>
         </div>
       </section>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="form-review__item login-form">
-
-                <div class="login-form__field field">
-                  <label class="field__label" for="login-surname">Фамилия:</label>
-                  <input class="field__input" id="login-surname" type="text" name="surname" placeholder="Укажите фамилию *">
-                </div>
-                <div class="login-form__field field">
-                  <label class="field__label" for="login-name">Имя:</label>
-                  <input class="field__input" id="login-name" type="text" name="name" placeholder="Укажите ваше имя *">
-                </div>
-                <div class="login-form__field field">
-                  <label class="field__label" for="login-patronymic">Отчество:</label>
-                  <input class="field__input" id="login-patronymic" type="text" name="patronymic"
-                    placeholder="Ну и отчество тоже">
-                </div>
-            </fieldset>
-
-
+      <section class="form-review">
+        <h2 class="visually-hidden">Заполните форму</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="form-review__item login-form">
+            <div class="login-form__field field">
+              <label class="field__label" for="login-surname">Фамилия:</label>
+              <input class="field__input" id="login-surname" type="text" name="surname" placeholder="Укажите фамилию *">
+            </div>
+            <div class="login-form__field field">
+              <label class="field__label" for="login-name">Имя:</label>
+              <input class="field__input" id="login-name" type="text" name="name" placeholder="Укажите ваше имя *">
+            </div>
+            <div class="login-form__field field">
+              <label class="field__label" for="login-patronymic">Отчество:</label>
+              <input class="field__input" id="login-patronymic" type="text" name="patronymic"
+               placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+          <fieldset class="form-review__item achievements-form">
+            <legend class="form-review__title">Ваши безбашенные достижения в&nbsp;путешествии:</legend>
+            <ul class="achievements-form__list checkbox">
+              <li class="checkbox__item">
+                <input class="visually-hidden form-review__input checkbox__input" type="checkbox"
+                  checked name="selfie" value="selfie" id="review-selfie">
+                <label for="review-selfie">Сделал селфи с&nbsp;акулой</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="visually-hidden form-review__input checkbox__input" type="checkbox"
+                  name="beach" id="review-beach">
+                <label for="review-beach">Обгорел на&nbsp;пляже</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="visually-hidden form-review__input checkbox__input" type="checkbox"
+                  name="celebrity" id="review-celebrity">
+                <label for="review-celebrity">Видел Чака Норриса</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="visually-hidden form-review__input checkbox__input" type="checkbox"
+                  name="souvenirs" id="review-souvenirs">
+                <label for="review-souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="visually-hidden form-review__input checkbox__input" type="checkbox" checked name="tower"
+                  id="review-tower">
+                <label for="review-tower">Удержал башню</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="visually-hidden form-review__input checkbox__input" type="checkbox" name="hotel"
+                  id="review-hotel">
+                <label for="review-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-review__item contact-form">
+            <div class="contact-form__field field ">
+              <label class="field__label" for="contact-telephone">НОМЕР ТЕЛЕФОНА:</label>
+              <input class="field__input field__input--telephone" id="contact-telephone" type="tel" name="telephone"
+                placeholder="Номер, пожалуйста:">
+            </div>
+            <div class="contact-form__field field ">
+              <label class="field__label" for="contact-email">АДРЕС ПОЧТЫ:</label>
+              <input class="field__input field__input--email" id="contact-email" type="email" name="email"
+                placeholder="Введите почту *">
+            </div>
+          </fieldset>
+          <fieldset class="form-review__item survey-form">
+            <legend class="form-review__title">С&nbsp;каким приложением путешествовали?</legend>
+            <ul class="survey-form__list radio">
+              <li class="radio__item">
+                <input class="visually-hidden form-review__input radio__input radio__input--current" type="radio" checked
+                  name="survey" value="positive" id="review-positive">
+                <label for="review-positive">Pink для iOS</label>
+              </li>
+              <li class="radio__item">
+                <input class="visually-hidden form-review__input radio__input" type="radio" name="survey"
+                  value="negative" id="review-negative">
+                <label for="review-negative">Pink на Android</label>
+              </li>
+              <li class="radio__item">
+                <input class="visually-hidden form-review__input radio__input" type="radio" name="survey"
+                  value="indefinite" id="review-indefinite">
+                <label for="review-indefinite">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-review__item feedback-form">
+            <label class="form-review__label" for="feedback-description">Опишите свои эмоции</label>
+            <textarea class="form-review__input feedback-form__input" id="feedback-description" name="text" rows="5"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form-review__button button" type="submit">Отправить отзыв</button>
+          <p class="form-necessarily">
+            * — обязательные поля
+          </p>
+        </form>
+      </section>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <a class="page-footer__logo">
+          <img src="img/logotype_blue_desktop.svg" width="147" height="40" alt="PINK">
+        </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/html_academy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
