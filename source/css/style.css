@@ -1,2 +1,58 @@
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+.visually-hidden {
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  margin: -5px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff"); }
+
+.page__header {
+  background-color: #283645;
+  color: #ffffff;
+  position: relative;
+  z-index: 1; }
+
+.page-header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  margin-left: 20px;
+  margin-top: 10px; }
+
+.site-list__item {
+  size: 18px; }
+
+.header {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

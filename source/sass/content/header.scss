@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  background-color: rgba($color-black, $opacity);
+
+  &--active {
+    @media (max-width: ($width-desktop - 1)) {
+      background-color: $color-primary;
+    }
+  }
+
+  &--nojs {
+    @media (max-width: ($width-desktop - 1)) {
+      position: initial;
+      background-color: $color-primary;
+    }
+  }
+}

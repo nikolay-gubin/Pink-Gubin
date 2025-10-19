@@ -1,11 +1,10 @@
-
-// Global
-
-@import "global/variables.scss";
+//global
 @import "global/global.scss";
 @import "global/fonts.scss";
+@import "global/variables.scss";
 
-//Blocks
 
-@import "blocks/page.scss";
-@import "blocks/page-header.scss";
+// content блоки
+@import "./content/body.scss";
+@import "./content/page.scss";
+@import "./content/header.scss";

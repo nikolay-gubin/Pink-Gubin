@@ -1,6 +1,9 @@
 // Colors
 
-$blue: #81b3d2;
+$darkblue: rgba(40, 54, 69, 1);
+$white: #ffffff;
+
+
 $blue-200: #669ec0;
 $blue-300: #5496bd;
 $black: #000000;
@@ -12,3 +15,8 @@ $grey-400: #d5d5d5;
 $grey-500: #666666;
 $grey-600: #5c6870;
 $grey-700: #333333;
+
+// Размеры экрана
+$width-mobile: 320px;
+$width-tablet: 660px;
+$width-desktop: 1200px;
