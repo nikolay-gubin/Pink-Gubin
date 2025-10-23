@@ -1,0 +1,31 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: @darkblue;
+  color: @white;
+  position: relative;
+  z-index: 1;
+}
+
+.page-header__logo {
+
+  height: 50px;
+
+  //outline: 5px solid rgba(4, 223, 4, 0.8);
+  //outline-offset: 1px;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+    width: 660px;
+     order: 2;
+  }
+  @media (min-width: @desktop-width) {
+    height: 110px;
+    order: 2;
+  }
+}
+
+
+.site-list__item {
+size: 18px;
+}

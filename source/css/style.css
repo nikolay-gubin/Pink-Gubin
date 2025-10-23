@@ -1,10 +1,24 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
 img {
   max-width: 100%;
-  height: auto; }
-
+  height: auto;
+}
 a {
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 .visually-hidden {
   position: absolute;
   width: 100px;
@@ -16,43 +30,103 @@ a {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; }
-
+  overflow: hidden;
+}
 *::after,
 *::before {
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff"); }
-
-.page__header {
+  box-sizing: border-box;
+}
+.page-header {
+  display: flex;
+  flex-direction: column;
   background-color: #283645;
   color: #ffffff;
   position: relative;
-  z-index: 1; }
-
+  z-index: 1;
+}
 .page-header__logo {
+  height: 50px;
+}
+@media (min-width: 660px) {
+  .page-header__logo {
+    height: 110px;
+    width: 660px;
+    order: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__logo {
+    height: 110px;
+    order: 2;
+  }
+}
+.site-list__item {
+  size: 18px;
+}
+.page-main__intro {
+  width: 100%;
+  background-color: #ffffff;
+  color: #ffffff;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -2px;
+}
+.intro__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: top;
-  margin-left: 20px;
-  margin-top: 10px; }
-
-.site-list__item {
-  size: 18px; }
-
-.header {
-  width: 100%; }
+  align-items: center;
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  outline: 5px solid rgba(4, 0, 255, 0.8);
+  outline-offset: 1px;
+}
+.intro__slogan {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  outline: 5px solid rgba(4, 223, 4, 0.8);
+  outline-offset: 1px;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__list a {
+  color: #ffffff;
+}
+@media (min-width: 660px) {
+  .mine-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .mine-nav__wrapper {
+    width: 1200px;
+  }
+}
+.mine-nav__toggle {
+  display: none;
+}
+@media (min-width: 660px) {
+  .site-list {
+    width: 660px;
+  }
+}
+@media (min-width: 1200px) {
+  .site-list {
+    width: 1200px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

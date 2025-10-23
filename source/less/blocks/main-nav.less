@@ -1,0 +1,35 @@
+.main-nav {
+  //outline: 5px solid rgba(4, 223, 4, 0.8);
+  //outline-offset: 1px;
+}
+
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .mine-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mine-nav__wrapper {
+    width: 1200px;
+  }
+}
+
+  .mine-nav__toggle {
+    display: none;
+
+  }
